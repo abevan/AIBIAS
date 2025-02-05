@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ethical Data Use &amp; AI Impact</title>
+  <!-- Futuristic Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Sticky Header with Dark Purple Gradient -->
+  <header id="siteHeader">
+    <div class="header-content">
+      <h1 class="site-title">Ethical Data Use &amp; AI Impact</h1>
+      <nav>
+        <ul>
+          <li><a href="#modules">Modules</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Full-Screen Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay">
+      <h2>Welcome to the Future of Ethical AI</h2>
+      <p>Explore our cutting-edge course modules and discover how data shapes our digital future.</p>
+      <a href="#modules" class="scroll-btn">Explore Modules</a>
+    </div>
+  </section>
+
+  <!-- Modules Section -->
+  <main id="modules">
+    <section class="modules-section">
+      <h2>Course Modules</h2>
+      <div class="grid-container">
+        <!-- Each week card has a data attribute for its video and serves as a trigger -->
+        <div class="module-card" data-week="Week 1" data-video="https://www.youtube.com/embed/NgaW_p7gsRc">
+          <h3>Week 1</h3>
+          <p>Introduction to Data Ethics</p>
+          <button class="open-modal">Watch Video</button>
+        </div>
+        <div class="module-card" data-week="Week 2" data-video="https://www.youtube.com/embed/S4fN-6tOOpc">
+          <h3>Week 2</h3>
+          <p>Privacy Policies &amp; Terms of Use</p>
+          <button class="open-modal">Watch Video</button>
+        </div>
+        <div class="module-card" data-week="Week 3" data-video="https://www.youtube.com/embed/a081Gpp5MeQ">
+          <h3>Week 3</h3>
+          <p>Data Collection Methods</p>
+          <button class="open-modal">Watch Video</button>
+        </div>
+        <div class="module-card" data-week="Week 4" data-video="https://www.youtube.com/embed/tJQSyzBUAew">
+          <h3>Week 4</h3>
+          <p>Understanding Algorithmic Bias</p>
+          <button class="open-modal">Watch Video</button>
+        </div>
+        <div class="module-card" data-week="Week 5" data-video="https://www.youtube.com/embed/LnXUl_ZnHLo">
+          <h3>Week 5</h3>
+          <p>Case Studies on AI Bias</p>
+          <button class="open-modal">Watch Video</button>
+        </div>
+        <div class="module-card" data-week="Week 6" data-video="https://www.youtube.com/embed/lO1Q320w6C8">
+          <h3>Week 6</h3>
+          <p>Cultural Implications of AI</p>
+          <button class="open-modal">Watch Video</button>
+        </div>
+        <div class="module-card" data-week="Week 7" data-video="https://www.youtube.com/embed/CpFyyD6Of0E">
+          <h3>Week 7</h3>
+          <p>Data Bias &amp; Its Consequences</p>
+          <button class="open-modal">Watch Video</button>
+        </div>
+        <div class="module-card" data-week="Week 8" data-video="https://www.youtube.com/embed/zIJRWjmW-GI">
+          <h3>Week 8</h3>
+          <p>Mitigation Strategies for AI Bias</p>
+          <button class="open-modal">Watch Video</button>
+        </div>
+        <div class="module-card" data-week="Week 9" data-video="https://www.youtube.com/embed/DI7ZxiDMuyc">
+          <h3>Week 9</h3>
+          <p>Ethical AI Design Principles</p>
+          <button class="open-modal">Watch Video</button>
+        </div>
+        <div class="module-card" data-week="Week 10" data-video="https://www.youtube.com/embed/?listType=playlist&list=PLJT63L-nN4d5NUqkgfje-zjeJVNuL3omt">
+          <h3>Week 10</h3>
+          <p>Final Project &amp; Course Review</p>
+          <button class="open-modal">Watch Video</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Modal for Video Playback with Dynamic Key Points -->
+  <div id="videoModal" class="modal">
+    <div class="modal-inner">
+      <div class="modal-header">
+        <h2 id="modalTitle">Module Details</h2>
+        <button class="modal-close">&times;</button>
+      </div>
+      <div class="modal-body">
+        <div class="video-container">
+          <iframe id="videoFrame" src="" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="watch-for">
+          <h3>Key Points</h3>
+          <ul id="keyPointsList">
+            <!-- Dynamic key points will be injected here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
